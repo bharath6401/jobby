@@ -1,0 +1,45 @@
+.skillUl {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 10px;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.similarJobsList {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.job-item {
+  background-color: #121212;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.jobDetails {
+  background-color: #000000;
+  color: white;
+}
+.similar-job-item {
+  background-color: #121212;
+  /* width: 98%; */
+  list-style: none;
+  border-radius: 10px;
+}
+
+.visit-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

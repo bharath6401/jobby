@@ -1,0 +1,117 @@
+.bg-y {
+  background-color: yellow;
+}
+.bg-o {
+  background-color: orange;
+}
+.p-1 {
+  padding: 10px;
+}
+.m-1 {
+  margin: 10px;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.login {
+  height: 100vh;
+}
+
+.ml-1 {
+  margin-left: 10px;
+}
+form {
+  width: 300px;
+  color: white;
+}
+.login-form {
+  border-radius: 10px;
+}
+label {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+input {
+  margin-bottom: 10px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #64748b;
+  padding: 10px;
+}
+
+.login-button {
+  background-color: #4f46e5;
+  border: 0px;
+  height: 30px;
+  border-radius: 5px;
+  color: white;
+}
+
+.bg-gray {
+  background-color: #272727;
+}
+.c-white {
+  color: white;
+}
+
+.p-2 {
+  padding: 20px;
+}
+.bg-black {
+  background-color: black;
+}
+
+.errormsg {
+  color: red;
+}

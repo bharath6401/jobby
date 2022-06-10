@@ -1,0 +1,43 @@
+.jobs {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+.search {
+  width: 350px;
+  background-color: transparent;
+  border: solid 0px black;
+  border-style: none;
+  height: 40px;
+  outline: none;
+  color: white;
+}
+.searchdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 350px;
+  height: 40px;
+  background-color: transparent;
+  border: solid 1px #b6c5ff;
+  border-radius: 4px;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.searchIcon {
+  padding: 0px;
+  margin: 0px;
+  height: 40px;
+  width: 40px;
+  margin-left: 0px;
+  align-self: center;
+}

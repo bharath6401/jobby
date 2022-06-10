@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 0px;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  align-items: center;
+  color: white;
+  font-weight: 900;
+  background-color: #272727;
+}
+.logout {
+  height: 25px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: blue;
+  margin-right: 10px;
+  color: white;
+}
+
+.link1 {
+  color: white;
+  text-decoration: none;
+}
