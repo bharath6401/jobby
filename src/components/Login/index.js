@@ -57,50 +57,54 @@ class Login extends Component {
     const {password, username, LoginErrorMsg, loginError} = this.state
     const jwtToken = Cookies.get('jwt_token')
 
-    // console.log(username, password)
-    return (
-      <div className="login col-12 d-flex flex-column justify-content-center align-items-center bg-black">
-        <div className="login-form bg-gray p-2 m-1">
-          <div className="d-flex flex-row justify-content-center m-1">
-            <img
-              alt="website logo"
-              src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-            />
+    if (jwtToken === undefined) {
+      return (
+        <div className="login col-12 d-flex flex-column justify-content-center align-items-center bg-black">
+          <div className="login-form bg-gray p-2 m-1">
+            <div className="d-flex flex-row justify-content-center m-1">
+              <img
+                alt="website logo"
+                src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
+              />
+            </div>
+            <form className="d-flex flex-column">
+              <label className="" htmlFor="username">
+                USERNAME
+              </label>
+              <input
+                placeholder="Username"
+                className=""
+                value={username}
+                onChange={this.UsernameInputFun}
+                id="username"
+                type="text"
+              />
+              <label className="" htmlFor="password">
+                PASSWORD
+              </label>
+              <input
+                placeholder="Password"
+                value={password}
+                onChange={this.PasswordInputFun}
+                id="password"
+                type="password"
+              />
+              <button
+                onClick={this.SubmitForm}
+                className="login-button"
+                type="submit"
+              >
+                Login
+              </button>
+              {loginError && <p className="errormsg">*{LoginErrorMsg}</p>}
+            </form>
           </div>
-          <form className="d-flex flex-column">
-            <label className="" htmlFor="username">
-              USERNAME
-            </label>
-            <input
-              placeholder="Username"
-              className=""
-              value={username}
-              onChange={this.UsernameInputFun}
-              id="username"
-              type="text"
-            />
-            <label className="" htmlFor="password">
-              PASSWORD
-            </label>
-            <input
-              placeholder="Password"
-              value={password}
-              onChange={this.PasswordInputFun}
-              id="password"
-              type="password"
-            />
-            <button
-              onClick={this.SubmitForm}
-              className="login-button"
-              type="submit"
-            >
-              Login
-            </button>
-            {loginError && <p className="errormsg">*{LoginErrorMsg}</p>}
-          </form>
         </div>
-      </div>
-    )
+      )
+    }
+    return <Redirect to="/" />
+
+    // console.log(username, password)
   }
 }
 export default Login
